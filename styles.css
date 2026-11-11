@@ -151,7 +151,7 @@ radial-gradient(circle at 90% 54%,rgba(255,255,255,.65) 0 1px,transparent 1.6px)
 
 
 /* ===== RingAnvil carry-over layer (combined-platform build) ===== */
-.member-avatar{aspect-ratio:4/3;height:auto}
+.member-avatar{aspect-ratio:4/3!important;height:auto!important}
 .member-avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
 .chip{display:inline-block;font-size:9px;font-weight:800;letter-spacing:.14em;padding:4px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
 .chip-live{color:#0b1512;background:#4ee2a0;border-color:#4ee2a0}
@@ -167,3 +167,14 @@ radial-gradient(circle at 90% 54%,rgba(255,255,255,.65) 0 1px,transparent 1.6px)
 .cmp{border:1px solid var(--line);background:var(--panel);border-radius:var(--r);padding:20px}
 .cmp h3{color:var(--cyan)}
 .cmp strong{color:var(--ink)}
+
+/* ===== AI-intense market cards (founder upgrade 2026-11-10) ===== */
+.mkt-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.mkt-card{display:block;border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden;text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.mkt-card:hover{transform:translateY(-3px);border-color:var(--cyan);box-shadow:0 14px 40px rgba(88,217,233,.13)}
+.mkt-art{position:relative;display:block;aspect-ratio:16/10;background:var(--panel2)}
+.mkt-art img{width:100%;height:100%;object-fit:cover;display:block}
+.mkt-art .chip{position:absolute;top:10px;right:10px;background:rgba(7,12,21,.85)}
+.mkt-art .chip-live{background:var(--green,#4ee2a0)}
+.mkt-art .chip-port{background:var(--cyan)}
+.mkt-name{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;font-weight:700;color:var(--ink);font-size:15px}
